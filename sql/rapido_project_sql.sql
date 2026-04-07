@@ -6,7 +6,7 @@ select * from successful_bookings;
  
 #2. average ride distance for each vechicle type
 create view ride_distance_each_vechicle 
-as select Vehicle_Type ,avg(Right_Distance)
+as select Vehicle_Type ,avg(Ride_Distance)
 as avg_distance from rapido_data group by Vehicle_Type;
 select * from ride_distance_each_vechicle;
 DROP VIEW IF EXISTS rides_cancelled_by_customers ;
